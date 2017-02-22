@@ -22,4 +22,4 @@ mymap.html (Output file, which contains the final map. It is created after each 
 
 
 # Various Info
-This project was created by Bousias-Alexakis Evangelos and Kostoulas Aristotelis as part of the Contemporary Web Applications course of the Techno-Economic Systems Post-Graduate program of the National Technical University of Athens. The project was supervised by Assistant Professor Ioannis Anagnostopoulos and PhD Candidate Gerasimos Razis, who we would like to thank for their guidance and support during project development.
+This project was created by Bousias-Alexakis Evangelos and Kostoulas Aristotelis as part of the Contemporary Web Applications course of the Techno-Economic Systems Post-Graduate program run by the National Technical University of Athens. The project was supervised by Assistant Professor Ioannis Anagnostopoulos and PhD Candidate Gerasimos Razis, who we would like to thank for their guidance and support during project development.
