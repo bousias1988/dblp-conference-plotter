@@ -3,13 +3,13 @@
 DBLP conference plotter is a desktop application which allows the user to depict conference locations utilizing google maps background. The user may produce a map based on a specified author or based on a conference name.
 
 The user is provided with a Graphical User Interface and two basic search modes: (a) search by author and (b) search by conference.
-\n
+<br/>
 (a) Search by author mode allows the user to depict locations of all the conferences the author has attended.
-\n
+<br/>
 (b) Search by conference mode allows the user to depict the locations where a conference has been held over time.
 
 # How to - Installation
-Compile and run the program in any Python environment.
+Compile and run the program in any Python environment.  
 The following libraries have to be installed:
 BeautifulSoup
 gmplot
