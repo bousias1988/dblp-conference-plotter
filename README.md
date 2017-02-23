@@ -9,7 +9,7 @@ The user is provided with a Graphical User Interface and two basic search modes:
 (b) Search by conference mode allows the user to depict the locations where a conference has been held over time.
 
 # How to - Installation
-Download 'dblp_search_and_draw_GUI_.py', 'dbOps.py' and 'test.db' (optionally- if not downloaded, the database is automatically created during the first run of the program). Place them in the same folder. Compile and run 'dblp_search_and_draw_GUI5.py' file in any Python environment and the Graphical User Interface will pop up.  
+Download 'dblp_search_and_draw_GUI_.py', 'dbOps.py' and 'dbplSD.db' (optionally- if not downloaded, the database is automatically created during the first run of the program). Place them in the same folder. Compile and run 'dblp_search_and_draw_GUI5.py' file in any Python environment and the Graphical User Interface will pop up.  
 
 ## Dependencies
 The following modules have to be installed:
@@ -39,11 +39,11 @@ The *Search By Conference* Button in the Starting Frame opens the search by conf
 ![search_by_conference](https://cloud.githubusercontent.com/assets/25885525/23278295/ae0c58a0-fa19-11e6-8e4d-99842d12ae12.PNG)
 
 # Contents
-dblp_search_and_draw_GUI5.py (main app) </br>
+dblp_search_and_draw_GUI_.py (main app) </br>
 dbOps.py (includes all DB handling operations) </br>
-test.db (db file. An instance is provided. In case it is deleted, it is created on next run.) </br>
+dblpSD.db (db file. An instance is provided. In case it is deleted, it is created on next run.) </br>
 mymap.html (Output file, which contains the final map. It is created after each run.)
 
 
 # Various Info
-This project was created by Bousias-Alexakis Evangelos and Kostoulas Aristotelis as part of the Contemporary Web Applications course of the Techno-Economic Systems Post-Graduate program run by the National Technical University of Athens. The project was supervised by Assistant Professor Ioannis Anagnostopoulos and PhD Candidate Gerasimos Razis, who we would like to thank for their guidance and support during project development.
+This project was created by Evangelos Bousias-Alexakis and Aristotelis Kostoulas as part of the Contemporary Web Applications course of the Techno-Economic Systems Post-Graduate program run by the National Technical University of Athens. The project was supervised by Assistant Professor Ioannis Anagnostopoulos and PhD Candidate Gerasimos Razis, who we would like to thank for their guidance and support during project development.
