@@ -456,7 +456,8 @@ def draw_final_map(resarg_input):
     gmap = gmplot.GoogleMapPlotter(c_lat, c_lng, zlvl)
     coord = zip(lat1, lon1, names1, color1)
     for i in coord:
-        gmap.marker(i[0], i[1], i[3], title=i[2])
+        if (i[0] != 0) & (i[1] !=0):
+            gmap.marker(i[0], i[1], i[3], title=i[2])
     
     gmap.draw("mymap.html")
     
