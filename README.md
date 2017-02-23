@@ -34,7 +34,7 @@ By dragging the mouse over a marker a list appears consisting of all the confere
 
 ![map_list](https://cloud.githubusercontent.com/assets/25885525/23278075/ecdb8066-fa18-11e6-8030-2436a9ba302f.png)
 
-The *Search By Conference* Button in the Starting Frame opens the search by conference Frame, where the User can search for any conference by either its name or abbreviation.
+The *Search By Conference* Button in the Starting Frame opens the search by conference Frame, where the User can search for any conference by either its name or abbreviation in a manner similar to the one presented in search by author mode.
 
 ![search_by_conference](https://cloud.githubusercontent.com/assets/25885525/23278295/ae0c58a0-fa19-11e6-8e4d-99842d12ae12.PNG)
 
