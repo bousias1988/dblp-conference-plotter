@@ -29,9 +29,13 @@ By clicking submit the program will search for all conferences attended by the s
 
 ![map_example](https://cloud.githubusercontent.com/assets/25885525/23277750/b80e3eba-fa17-11e6-8e48-1b97df0d83ca.PNG)
 
-By draging the mouse over a marker appears a list of all the conferences held in the specified location:
+By draging the mouse over a marker a list appears consisting of all the conferences held in the specified location:
 
 ![map_list](https://cloud.githubusercontent.com/assets/25885525/23278075/ecdb8066-fa18-11e6-8030-2436a9ba302f.png)
+
+The *Search By Conference* Button in the Starting Frame opens the search by conference Frame, where the User can search for any conference by either its name or abbrieviation.
+
+![search_by_conference](https://cloud.githubusercontent.com/assets/25885525/23278295/ae0c58a0-fa19-11e6-8e4d-99842d12ae12.PNG)
 
 # Contents
 dblp_search_and_draw_GUI5.py (main app)
