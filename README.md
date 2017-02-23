@@ -9,13 +9,27 @@ The user is provided with a Graphical User Interface and two basic search modes:
 (b) Search by conference mode allows the user to depict the locations where a conference has been held over time.
 
 # How to - Installation
-Compile and run the program in any Python environment.  
-The following libraries have to be installed:
-BeautifulSoup
-gmplot
-...
-![screenshot_22](https://cloud.githubusercontent.com/assets/25885525/23229684/d567be2e-f949-11e6-9301-f434f0d2520c.png)
+Download 'dblp_search_and_draw_GUI_.py', 'dbOps.py' and 'test.db' (optionally- if not downloaded, the database is automaticly created during the first run of the program). Place them in the same folder. Compile and run 'dblp_search_and_draw_GUI5.py' file in any Python environment and the Graphical User Interface will pop up.  
 
+## Dependencies
+The following modules have to be installed:
+<br/> BeautifulSoup
+<br/> requests
+<br/> ElementTree
+<br/> urllib2
+<br/> re
+<br/> webbrowser
+<br/> HTMLParser
+<br/> json
+<br/> time
+<br/> gmplot
+
+## Graphical User Interface
+
+The GUI usage is pretty straightforward. The starting frame (Picture 1) allows the user to search dblp based on the author's name and surname (he can also search dblp by using only the last name). By pressing the submit button the program interacts with dblp search API and returns all the retrieved URI's in a list form (Picture 2)
+
+![screenshot_22](https://cloud.githubusercontent.com/assets/25885525/23229684/d567be2e-f949-11e6-9301-f434f0d2520c.png)
+<center> Picture 1 </center>
 
 # Contents
 dblp_search_and_draw_GUI5.py (main app)
