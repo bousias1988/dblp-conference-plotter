@@ -21,7 +21,7 @@ The following modules have to be installed:
 
 The GUI usage is pretty straightforward. The starting frame (Picture 1) allows the user to search dblp based on the author's name and surname (he can also search dblp by using only the surname).
 ![screenshot_22](https://cloud.githubusercontent.com/assets/25885525/23229684/d567be2e-f949-11e6-9301-f434f0d2520c.png)
-</center> Picture 1 </br>
+Picture 1 </br>
 By pressing the submit button the program interacts with dblp search API and returns all the retrieved URI's in a list form (Picture 2)
 
 # Contents
