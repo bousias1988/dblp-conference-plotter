@@ -19,10 +19,19 @@ The following modules have to be installed:
 
 ## Graphical User Interface
 
-The starting frame (Picture 1) allows the user to search dblp based on the author's name and surname (he can also search dblp by using only the author's surname).
-![screenshot_22](https://cloud.githubusercontent.com/assets/25885525/23229684/d567be2e-f949-11e6-9301-f434f0d2520c.png)
-</br> center(Picture 1 </br>
-By pressing the submit button the program interacts with dblp search API and returns all the retrieved URI's in a list form (Picture 2)
+The starting frame (Picture 1) allows the user to search dblp based on the author's name and surname (he can also search dblp by using only the author's surname).</br>
+![starting_frame](https://cloud.githubusercontent.com/assets/25885525/23277653/53cfd40e-fa17-11e6-8939-4e23952aa2a9.PNG)
+By pressing the submit button the program interacts with dblp search API and returns all the retrieved URI's in a list form.
+
+![frame2](https://cloud.githubusercontent.com/assets/25885525/23277669/677dd15e-fa17-11e6-9bf3-c7da68455475.png)
+
+By clicking submit the program will search for all conferences attended by the selected author and subsequently for the location where each conference was held and will return an html file with the map which will pop up in the user's browser.
+
+![map_example](https://cloud.githubusercontent.com/assets/25885525/23277750/b80e3eba-fa17-11e6-8e48-1b97df0d83ca.PNG)
+
+By draging the mouse over a marker appears a list of all the conferences held in the specified location:
+
+![map_list](https://cloud.githubusercontent.com/assets/25885525/23278075/ecdb8066-fa18-11e6-8030-2436a9ba302f.png)
 
 # Contents
 dblp_search_and_draw_GUI5.py (main app)
