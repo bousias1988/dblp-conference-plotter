@@ -13,9 +13,9 @@ Download 'dblp_search_and_draw_GUI_.py', 'dbOps.py' and 'test.db' (optionally- i
 
 ## Dependencies
 The following modules have to be installed:
-<br/> BeautifulSoup
-<br/> requests
-<br/> gmplot
+<br/> -BeautifulSoup
+<br/> -requests
+<br/> -gmplot
 
 ## Graphical User Interface
 
@@ -39,9 +39,9 @@ The *Search By Conference* Button in the Starting Frame opens the search by conf
 ![search_by_conference](https://cloud.githubusercontent.com/assets/25885525/23278295/ae0c58a0-fa19-11e6-8e4d-99842d12ae12.PNG)
 
 # Contents
-dblp_search_and_draw_GUI5.py (main app)
-dbOps.py (includes all DB handling operations)
-test.db (db file. An instance is provided. In case it is deleted, it is created on next run.)
+dblp_search_and_draw_GUI5.py (main app) </br>
+dbOps.py (includes all DB handling operations) </br>
+test.db (db file. An instance is provided. In case it is deleted, it is created on next run.) </br>
 mymap.html (Output file, which contains the final map. It is created after each run.)
 
 
