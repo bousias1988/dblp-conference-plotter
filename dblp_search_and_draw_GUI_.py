@@ -397,6 +397,14 @@ def get_coord_google(names1_arg):
             'http://maps.googleapis.com/maps/api/geocode/json?address="%s"' % city)
         geocode = json.loads(geocode.text)
         print city
+        if geocode['status'] == 'ZERO_RESULTS':
+            lat = 0.000000
+            lng = 0.000000
+            t_lat1.append(lat)
+            t_lng1.append(lng)
+            t_names.append(city)
+            cnt +=1
+            continue
         lat = geocode['results'][0]['geometry']['location']['lat']
         lng = geocode['results'][0]['geometry']['location']['lng']
         t_lat1.append(lat)
@@ -522,7 +530,7 @@ def main_function(authorUrl,author_name,author_surname):
     # If new, add author to the db and fetch the new id
     if not(newAuthor.alreadyIn):
         x = dbOps.add_person(newAuthor.author_url,newAuthor.Surname, newAuthor.Name)
-        newAuthor.alreadyIn == True
+        newAuthor.alreadyIn = True
     # Get xml and Conference Title, Year and URL from it
     print get_final_part_of_url(authorUrl)
     distConfAll = get_conf_data_xml(get_final_part_of_url(authorUrl))
