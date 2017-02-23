@@ -21,7 +21,7 @@ The following modules have to be installed:
 
 The starting frame (Picture 1) allows the user to search dblp based on the author's name and surname (he can also search dblp by using only the author's surname).<br/>
 <div style="text-align:center">
-![starting_frame](https://cloud.githubusercontent.com/assets/25885525/23277653/53cfd40e-fa17-11e6-8939-4e23952aa2a9.PNG)
+<img src= "![starting_frame](https://cloud.githubusercontent.com/assets/25885525/23277653/53cfd40e-fa17-11e6-8939-4e23952aa2a9.PNG)" />
 </div>
 <br/>
 By pressing the submit button the program interacts with dblp search API and returns all the retrieved URI's in a list form.
