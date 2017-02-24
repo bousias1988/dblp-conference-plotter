@@ -1,6 +1,6 @@
 # dblp-conference-plotter Synopsis
 
-DBLP conference plotter is a desktop application which allows the user to depict conference locations utilizing Google maps background. The user may produce a map based on a specified author or based on a conference name.
+DBLP conference plotter is a desktop application, developed using python 2.7, which allows the user to depict conference locations utilizing Google maps background. The user may produce a conference locations map based either on a specified author or based on a conference name.
 
 The user is provided with a Graphical User Interface and two basic search modes: (a) search by author and (b) search by conference.
 <br/>
