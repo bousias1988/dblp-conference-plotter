@@ -15,11 +15,13 @@ Download 'dblp_search_and_draw_GUI_.py', 'dbOps.py' and 'dbplSD.db' (optionally-
 The following modules have to be installed:
 <br/> -BeautifulSoup
 <br/> -requests
-<br/> -gmplot https://github.com/vgm64/gmplot
+<br/> -gmplot https://github.com/vgm64/gmplot <br/>
 
-A known issue of the gmplot module that we also came across is that the marker path does not work on Windows (the markers don't appear in the final map). A solution is described in the following link: https://github.com/vgm64/gmplot/issues/18 .Change the following line
-self.coloricon = os.path.join(os.path.dirname(file), 'markers/%s.png')
-in the class init definition to
+An easy way to install the aforementioned modules is to use pip https://pip.pypa.io/en/stable/# <br/>
+
+A known issue of the gmplot module that we also came across is that the marker path does not work on Windows (the markers don't appear in the final map). A solution is described in the following link: https://github.com/vgm64/gmplot/issues/18 .Change the following line <br/>
+self.coloricon = os.path.join(os.path.dirname(file), 'markers/%s.png') <br/>
+in the class init definition to <br/>
 self.coloricon = 'http://www.googlemapsmarkers.com/v1/%s/'
 
 ## Graphical User Interface
