@@ -49,8 +49,8 @@ The *Search By Conference* Button in the Starting Frame opens the search by conf
 dblp_search_and_draw_GUI_.py (main app) </br>
 dbOps.py (includes all DB handling operations) </br>
 dblpSD.db (db file. An instance is provided. In case it is deleted, it is created on next run.) </br>
-mymap.html (Output file, which contains the final map. It is created after each run.)
+mymap.html (Output file, which contains the final map. Not included- It is automatically created after each run.)
 
 
-# Various Info
+# Project General Info- Acknowledgements
 This project was created by Evangelos Bousias-Alexakis and Aristotelis Kostoulas as part of the Contemporary Web Applications course of the Techno-Economic Systems Post-Graduate program run by the National Technical University of Athens. The project was supervised by Assistant Professor Ioannis Anagnostopoulos and PhD Candidate Gerasimos Razis, who we would like to thank for their guidance and support during project development.
