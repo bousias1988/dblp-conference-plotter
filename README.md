@@ -15,11 +15,16 @@ Download 'dblp_search_and_draw_GUI_.py', 'dbOps.py' and 'dbplSD.db' (optionally-
 The following modules have to be installed:
 <br/> -BeautifulSoup
 <br/> -requests
-<br/> -gmplot
+<br/> -gmplot https://github.com/vgm64/gmplot
+
+A known issue of the gmplot module that we also came across is that the marker path does not work on Windows (the markers don't appear in the final map). A solution is described in the following link: https://github.com/vgm64/gmplot/issues/18 .Change the following line
+self.coloricon = os.path.join(os.path.dirname(file), 'markers/%s.png')
+in the class init definition to
+self.coloricon = 'http://www.googlemapsmarkers.com/v1/%s/'
 
 ## Graphical User Interface
 
-The starting frame (Picture 1) allows the user to search dblp based on the author's name and surname (he can also search dblp by using only the author's surname).<br/>
+The starting frame allows the user to search dblp based on the author's name and surname (he can also search dblp by using only the author's surname).<br/>
 ![starting_frame](https://cloud.githubusercontent.com/assets/25885525/23277653/53cfd40e-fa17-11e6-8939-4e23952aa2a9.PNG)
 <br/>
 By pressing the submit button the program interacts with dblp search API and returns all the retrieved URI's in a list form.
