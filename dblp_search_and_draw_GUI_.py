@@ -47,7 +47,7 @@ class SampleApp(tk.Tk):
         container.grid_rowconfigure(0, weight=1)
         container.grid_columnconfigure(0, weight=1)
         self.title("dblp conference plotter")
-        self.geometry(newGeometry='420x110+500+200')
+        #self.geometry(newGeometry='420x110+500+200')
 
         self.frames = {}
         for F in (StartPage, PageOne, PageTwo,PageThree):
@@ -58,7 +58,7 @@ class SampleApp(tk.Tk):
             # put all of the pages in the same location;
             # the one on the top of the stacking order
             # will be the one that is visible.
-            frame.grid(row=0, column=0, sticky="nsew")
+            frame.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
 
         self.show_frame("StartPage")
 
