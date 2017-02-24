@@ -45,6 +45,10 @@ The *Search By Conference* Button in the Starting Frame opens the search by conf
 
 ![search_by_conference](https://cloud.githubusercontent.com/assets/25885525/23278295/ae0c58a0-fa19-11e6-8e4d-99842d12ae12.PNG)
 
+# High Level Description
+
+In search by author mode the program gets as an input the surname and name (optionally) of the author. It interacts with dblp's search API and returns to the user the names of all the authors (URLs) returned by the search engine as a list. After the user has specified the author, the program searches in the author's dblp page and recovers all the conference URLs the author has attended. From each conference URL the program recovers the location name, year and name of the conference. The program recovers the geographic coordinates of each location by using the Google geocode API. It stores all the retrieved information into a database in order to avoid delays (due to web connection) in future runs. Finally the html map file is created and opened using the user's browser. A similar approach is applied in search by conference mode.
+
 # Contents
 dblp_search_and_draw_GUI_.py (main app) </br>
 dbOps.py (includes all DB handling operations) </br>
