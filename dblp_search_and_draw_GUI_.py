@@ -196,6 +196,7 @@ class StartPage(tk.Frame):
         
         self.E2 = tk.Entry(self, bd =5)
         self.E2.grid(row=2,column=1)
+        self.E2.bind('<Return>', lambda e: controller.search_dblp(self.E1.get(), self.E2.get(), self.ch_b_var.get()))
         L2=tk.Label(self,text='Surname')
         L2.grid(row=2,column=0)
         
