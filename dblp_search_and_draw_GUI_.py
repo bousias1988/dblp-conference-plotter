@@ -57,7 +57,7 @@ class SampleApp(tk.Tk):
         temp_list = dblp.search_dblp(author_name,author_surname)
         if temp_list:
             if ch_b_var:
-                dblp.main_function(temp_list[0])
+                dblp.main_function(temp_list[0][1])
             else:
                 #PageTwo.temp_list_names=temp_list_names
                 #print PageTwo.temp_list_names
@@ -183,11 +183,13 @@ class PageTwo(tk.Frame):
         B2.grid(row=2,column=1)
     def change_temp_list(self):
         variable= tk.StringVar(self)
+        options = dict(self.temp_list)
         if self.temp_list.__len__()!=0:
-            variable.set(self.temp_list[0])
-        LB1=tk.OptionMenu(self,variable,*self.temp_list)
+            variable.set(options.keys()[0])
+        LB1=tk.OptionMenu(self,variable,*options.keys())
+        LB1.pack()
         LB1.grid(row=1,column=0)
-        B = tk.Button(self, text ="Submit", command = lambda: dblp.main_function(variable.get()),highlightcolor='red')
+        B = tk.Button(self, text ="Submit", command = lambda: dblp.main_function(options[variable.get()]),highlightcolor='red')
         #B = tk.Button(self, text ="Submit", command = lambda: tkMessageBox.showinfo("Author not found",variable.get()),highlightcolor='red')
         #B = tk.Button(self, text ="Submit", command = lambda: tkMessageBox.showinfo("Author not found",self.temp_list_names[0]),highlightcolor='red')
         print 'hi',self.temp_list_names
