@@ -109,7 +109,8 @@ def search_dblp(author_name, author_surname):
         search_xml = req.get('http://dblp.org/search/author/api?q=' + author_surname + '$')
 
     author = ET.fromstring(search_xml.text)
-    temp_list = []
+    temp_list_url = []
+    temp_list_author = []
 
     if author.find("hits").attrib["sent"] == '0':
         print("Author not found",
@@ -117,23 +118,24 @@ def search_dblp(author_name, author_surname):
     else:
         # collect all urls
         for child in author.find("hits"):
-            temp_list.append(child.find('info').find('url').text)
+            temp_list_author.append(child.find('info').find('author').text)
+            temp_list_url.append(child.find('info').find('url').text)
+        temp_list = zip(temp_list_author,temp_list_url)
     return temp_list
 
-# temp_list_names = []
-# # collect all names
-# for child in author.find("hits"):
-#     temp1 = child.find('info').find('author').text
-#     temp2 = temp1.find(' ')
-#     temp_list_names.append((temp1[0:temp2], temp1[temp2 + 1::]))
-# if ch_b_var:
-#     main_function(temp_list[0], *temp_list_names[0])
-# else:
-#     for index, name in enumerate(temp_list_names):
-#         print (index, name, temp_list[index])
+
 
 def get_final_part_of_url(url):
-    return url[url.find('pers/') + 4::]
+    url_req = urllib2.Request(url)
+    url_res = urllib2.urlopen(url_req)
+    url = url_res.geturl()
+    reversed_url = url[::-1]
+    reversed_f_part = reversed_url.partition("/")[0] + reversed_url.partition("/")[1]
+    reversed_rest = reversed_url.partition(reversed_f_part)[2]
+    reversed_s_part = reversed_rest.partition("/")[0] + reversed_rest.partition("/")[1]
+    reversed_concat = reversed_f_part + reversed_s_part
+    url = reversed_concat[::-1]
+    return url
 
 
 def get_conf_data_xml(part_of_url):
@@ -406,5 +408,5 @@ def main_function(authorUrl):
 
 
 if __name__ == "__main__":
-    main_function('http://dblp.org/pers/a/Anagnostopoulos:Ioannis','Ioannis','Anagnostopoulos')
+    main_function('http://dblp.org/pers/a/Anagnostopoulos:Ioannis')
 
